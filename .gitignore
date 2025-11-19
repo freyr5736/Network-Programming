@@ -1,0 +1,22 @@
+# Sensitive Data
+.config
+*.config
+
+# Compiled object files
+*.o
+*.obj
+
+# Compiled static libraries
+*.a
+*.lib
+
+# Compiled shared libraries / dynamic libs
+*.so
+*.so.*
+*.dll
+*.dylib
+
+# Executables
+run
+a.out
+*.exe
