@@ -33,16 +33,16 @@ CURL GET
 
 CALL BACK FUNCTION TO STORE RESPONSE
     size_t write_call_back(void* contents, size_t size, size_t nmemb, void* userp) {
-    size_t total = size * nmemb;
-    std::string* s = reinterpret_cast<std::string*>(userp); // stores the downloaded data
+        size_t total = size * nmemb;
+        std::string* s = reinterpret_cast<std::string*>(userp); // stores the downloaded data
 
-    try {
-        s->append((char*)contents, total);
-    } 
-    
-    catch (...) {
-        return 0;  // tells curl "write failed"
+        try {
+            s->append((char*)contents, total);
+        } 
+        
+        catch (...) {
+            return 0;  // tells curl "write failed"
+        }
+
+        return total;
     }
-
-    return total;
-}
