@@ -1,0 +1,4 @@
+/home/freyr5736/coding/network programming/P03_gRPC/build/CMakeFiles/protolib.dir
+/home/freyr5736/coding/network programming/P03_gRPC/build/CMakeFiles/P03_GRPC.dir
+/home/freyr5736/coding/network programming/P03_gRPC/build/CMakeFiles/edit_cache.dir
+/home/freyr5736/coding/network programming/P03_gRPC/build/CMakeFiles/rebuild_cache.dir
