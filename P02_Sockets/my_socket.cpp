@@ -5,8 +5,8 @@ custom_socket::my_socket::my_socket(int domain, int service, int protocol, int p
     
     // address structure
     address.sin_family = domain;
-    address.sin_port = htons(port);;
-    address.sin_addr.s_addr = htonl(interface);
+    address.sin_port = htons(port); // converting to byte-order of the network
+    address.sin_addr.s_addr = htonl(interface); // converting to byte-order of the network
 
     // socket
     sock = socket(domain,service,protocol);
