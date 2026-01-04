@@ -11,14 +11,8 @@ custom_socket::my_socket::my_socket(int domain, int service, int protocol, int p
     // socket
     sock = socket(domain,service,protocol);
     test_connection(sock);
-
-    // network connection
-    connection = connect_to_network(sock,address);
-    test_connection(connection);
-
 }
 
-// virtual fucntion to test connection
 void custom_socket::my_socket::test_connection(int item_to_test){
     if(item_to_test<0){
         perror("Failed to connect . . .");
@@ -39,4 +33,7 @@ int custom_socket::my_socket::get_socket(){
     return sock;
 }
 
-
+// setter functions
+int custom_socket::my_socket::set_connection(int con){
+    connection = con;
+}
